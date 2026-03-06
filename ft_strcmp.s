@@ -18,6 +18,7 @@ ft_strcmp:
     je .end_loop
     inc rax
     jmp .loop
+
 .end_loop:
     sub rdx, rcx
     mov rax, rdx
