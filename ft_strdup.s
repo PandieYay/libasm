@@ -7,6 +7,7 @@ extern ft_strcpy
 ft_strdup:
     push rdi ; Push string to stack
     call ft_strlen
+    inc rax
     mov rdi, rax ; rdi = size of the string
     call malloc wrt ..plt
     test rax, rax ; rax is now new char *string
